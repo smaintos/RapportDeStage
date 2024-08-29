@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom'; 
@@ -7,15 +7,16 @@ const Sujet5: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col pb-[4rem]">
+    <div className="bg-slate-900 min-h-screen flex flex-col pb-16">
       <Navbar />
       
-      <div className="flex-grow pt-[2rem] px-[4rem]">
-        <h1 className="text-4xl text-white text-center mb-[4rem]">Conclusion</h1>
+      <div className="flex-grow pt-8 px-4 md:px-16 lg:px-32">
+        <h1 className="text-4xl text-white text-center mb-16">Conclusion</h1>
 
         <div className="mx-auto max-w-4xl">
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Fin du stage</h2>
             <p className="text-slate-300 text-lg mb-4">
               Et voilà, on s'approche de la fin du stage. Le site est en grande partie terminé, il reste quelques détails à peaufiner. Toute la durée du stage s'est très bien passée. Chaque décision
@@ -23,7 +24,7 @@ const Sujet5: React.FC = () => {
               Même si nous étions en télétravail, il était essentiel de tenir les clients informés. Après avoir finalisé les dernières retouches, nous avons livré le site sans dépasser les délais.
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Ressenti</h2>
             <p className="text-slate-300 text-lg mb-4">
               Ce stage m'a permis de me confronter à des défis réels et de comprendre l'importance de l'adaptabilité dans un environnement de travail que je ne connaissais pas. Car oui, j'ai (un peu) critiqué WordPress tout au long de ce rapport de stage,
@@ -32,7 +33,7 @@ const Sujet5: React.FC = () => {
               Webflow ou encore Wix. J'en retire tout de même du positif à reprendre en main un CMS, car ce sont toujours des compétences à acquérir. Cela me permet aussi de pouvoir aider d'autres personnes qui ne sont pas à l'aise avec ce genre de service.
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Blog de stage</h2>
             <p className="text-slate-300 text-lg mb-4">
               Ce blog a été un excellent moyen de documenter mes progrès et de partager mes expériences tout au long de cette période. J'espère qu'il pourra servir de référence à d'autres stagiaires ou à ceux qui souhaitent en savoir plus sur le développement web via CMS.

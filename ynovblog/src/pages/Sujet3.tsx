@@ -1,76 +1,85 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BlogCard from '../components/BlogCard';
-import Tooltip from '../components/Tooltip'; 
-import { Link } from 'react-router-dom'; 
+import Tooltip from '../components/Tooltip';
 import { FaArrowRight } from 'react-icons/fa'; 
 
-const Sujet3: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+const Sujet1: React.FC = () => {
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col pb-[4rem]">
+    <div className="bg-slate-900 min-h-screen flex flex-col pb-16">
       <Navbar />
-      <BlogCard content="3. Découverte du CMS" className="mt-[1.5rem]" />
-      <div className="flex-grow pt-[2rem] px-[4rem]">
-        <h1 className="text-2xl font-bold text-white ml-[26.5rem] mt-[1rem]">Découverte de l'outil</h1>
-        <br></br>
+      <BlogCard content="1. Le Commencement" className="mt-6" />
+      <div className="flex-grow pt-8 px-4 md:px-16 lg:px-32">
         <div className="mx-auto max-w-3xl">
-          <div className="mb-[4rem] text-left">
+          <h1 className="text-2xl font-bold text-white mb-8">L'asso et la vitrine</h1>
+          <div className="mb-16 text-left">
             <p className="text-slate-300 text-lg mb-4">
-              Alors, parlons un peu de WordPress. Si vous avez déjà entendu parler de WordPress, vous savez peut-être que c'est une plateforme qui permet de créer des sites web sans forcément écrire une seule ligne de code. 
-              Un <Tooltip text="CMS" definition="Un Content Management System (CMS), ou Système de Gestion de Contenu, est un logiciel qui permet de créer et gérer du contenu sur un site web de manière simplifiée." /> comme WordPress est conçu pour rendre la création de sites web accessible à tout le monde.
-            </p>
-            <img src="/images/wordpress/logo.png" alt="Logo WordPress" className="mx-auto w-[20rem] h-[20rem] object-cover mb-4"/>
-            <p className="text-slate-300 text-lg mb-4">
-              C'est l'outil parfait pour les personnes qui veulent un site simple et rapide à mettre en place. WordPress propose une grande variété de thèmes préconçus, des mises en page que vous pouvez personnaliser selon vos besoins. Mais, comme tout, il y a des avantages et des inconvénients.
-            </p>
-          </div>
-          <div className="mb-[4rem] text-left">
-            <h2 className="text-2xl text-white mb-4 font-bold">Pourquoi je préfère le développement à la main</h2>
-            <p className="text-slate-300 text-lg mb-4">
-              Quand on développe un site à la main, on a la liberté totale. Chaque détail peut être personnalisé, chaque fonctionnalité peut être codée exactement comme on le souhaite. C'est un peu comme construire une maison en partant de rien : on choisit chaque matériau, chaque couleur, et on peut vraiment créer quelque chose d'unique.
+              Dans les pages précédentes, vous avez pu découvrir l'association et ses objectifs. 
+              Mais au final, qu'est-ce que je fais là ?
             </p>
             <p className="text-slate-300 text-lg mb-4">
-              Avec WordPress, c'est différent. Si vous voulez ajouter des fonctionnalités spécifiques, comme une boutique en ligne ou un système de réservation, il faut installer des <Tooltip text="plugins" definition="Les plugins sont des extensions que l'on ajoute à WordPress pour ajouter ou modifier des fonctionnalités du site, comme un module de sécurité, une galerie photo, ou encore un outil de SEO." />. Les plugins sont comme des petites extensions qui ajoutent des fonctionnalités à votre site. Mais attention, plus vous en installez, plus cela peut ralentir votre site, et tous les plugins ne sont pas toujours bien conçus ou compatibles entre eux.
-            </p>
-            <img src="/images/wordpress/extentions.png" alt="Tableau de bord WordPress" className="mx-auto w-[60rem] h-[20rem] object-cover rounded-lg shadow-lg mb-4"/>
-            <p className="text-slate-300 text-lg mb-4">
-              D'un autre côté, WordPress rend la gestion de la sécurité plus accessible grâce à ces plugins. Les plugins de sécurité peuvent gérer tout, des pare-feux aux sauvegardes automatiques. Cependant, cela a un inconvénient majeur : si un plugin présente une faille de sécurité, votre site entier peut devenir vulnérable. Il est donc essentiel de garder vos plugins à jour et de choisir des plugins fiables.
-            </p>
-            <p className="text-slate-300 text-lg mb-4">
-              Et puis, quand on parle de développement <Tooltip text="back-end" definition="Le back-end fait référence à tout ce qui se passe en coulisses sur un site web, y compris la gestion des bases de données, les serveurs et la logique métier." />, WordPress n'est pas toujours l'idéal. Pour faire du back-end efficace sur WordPress, il faut souvent jongler avec plusieurs plugins et extensions, ce qui peut compliquer les choses. Et honnêtement, l'interface de développement de WordPress n'est pas la plus intuitive.
+              Comme toute association d'événementiel, il faut bien une vitrine qui donne envie aux gens de venir voir ce qu'ils font 
+              et toucher un maximum de monde. 
+              C'est là que mon collègue et moi intervenons.
+              <br /><br />
+              Car oui, nous sommes deux sur ce stage. 
+              C'était une belle opportunité de travailler dans un milieu qui me plaît et, en plus, avec un ami avec qui je m'entendais très bien.
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
-            <h2 className="text-2xl text-white mb-4 font-bold">Mon avis sur WordPress</h2>
+          <div className="mb-16 text-left">
+            <h2 className="text-2xl text-white mb-4 font-bold">Le but du stage</h2>
             <p className="text-slate-300 text-lg mb-4">
-              En résumé, WordPress est un excellent outil pour ceux qui veulent un site web sans trop se compliquer la vie. C'est rapide, pratique, et il y a une grande communauté pour vous aider. Mais si vous cherchez à créer un site vraiment unique avec des fonctionnalités sur-mesure, le développement à la main reste, à mon avis, la meilleure option.
+              Il fallait comprendre le problème de l'association. 
+              Jusqu'à présent, ils communiquaient uniquement via les réseaux sociaux comme Instagram, 
+              ce qui était une bonne stratégie pour toucher un maximum de monde. 
+              Mais ils ont constaté qu'une partie de la communication de leurs activités passait ailleurs, notamment sur leur site web.
             </p>
             <p className="text-slate-300 text-lg mb-4">
-              C'est pour cette raison que, pour notre projet, nous avons décidé de combiner les deux approches : utiliser WordPress pour la gestion du contenu, mais développer à la main certaines parties du site pour avoir plus de liberté et de personnalisation.
+              Le problème était que leur site n'était pas à la hauteur de la
+              <span> </span>
+              <Tooltip text="DA" definition="Direction artistique." />
+              <span> </span>
+              qu'ils souhaitaient avoir. 
+              Il fallait donc procéder à une refonte complète du site et proposer des solutions de DA adaptées à l'ambiance et 
+              à l'image que l'association voulait refléter auprès des adhérents.
             </p>
-            <img src="/images/wordpress/horrible.png" alt="Site WordPress" className="mx-auto w-[80%] h-[20rem] object-cover rounded-lg shadow-lg mb-4"/>
           </div>
-          <p className="text-slate-300 text-lg mb-4">
-            Oui, je sais, c'est horrible présenté comme ça, mais avec le délai de durée de stage et la charge de travail, ce n'était pas si mal en fin de compte. Certes, l'<Tooltip text="IDE" definition="Un IDE (Integrated Development Environment) est un logiciel qui fournit des outils complets aux développeurs pour écrire, tester et déboguer du code." /> intégré n'est PAS PRATIQUE DU TOUT, 
-            mais au moins toute la partie <Tooltip text="SEO" definition="Le SEO, ou Search Engine Optimization, est l'ensemble des techniques visant à améliorer le positionnement d'un site web dans les résultats des moteurs de recherche." />, redirection, sécurité, bah, on n'allait pas s'en occuper : tout était déjà fait grâce aux plugins. 
-            Et surtout, pour l'association qui n'a pas forcément de développeur web parmi ses employés, l'outil est facile à prendre en main, 
-            donc modifiable à l'infini même sans avoir de connaissances dans le domaine. Maintenant, on va donc parler de <Link to="/sujet-4" className="text-blue-500 hover:underline">la prochaine étape</Link>.
-          </p>
+          <div className="mb-16 text-left">
+            <h2 className="text-2xl text-white mb-4 font-bold">Trouver une solution</h2>
+            <p className="text-slate-300 text-lg mb-4">
+              Maintenant que nous savions ce que nous devions faire, il fallait réfléchir à comment le faire.
+            </p>
+            <p className="text-slate-300 text-lg mb-4">
+              Nous avons donc décidé de repartir de zéro en tenant compte des quelques directives que notre maîtresse de stage nous avait fournies 
+              lors de nos rendez-vous avec elle. 
+              Nous avons identifié trois critères fondamentaux pour la refonte du site :
+            </p>
+            <ul className="list-disc text-left text-slate-300 text-lg mt-4 mx-auto w-full md:w-3/4 lg:w-2/3">
+              <li>Présenter l'association, ses valeurs, ses événements, et expliquer comment les rejoindre.</li>
+              <li>Un site simple à lire, à prendre en main, et facilement modifiable via le
+                <span> </span>
+                <Tooltip text="CMS" definition="CMS est l'acronyme de Content Management System, c'est-à-dire système de gestion de contenu. Il s'agit d'un logiciel en ligne grâce auquel il est possible de créer, de gérer et de modifier facilement un site web, sans avoir besoin de connaissances techniques en langage informatique." />
+              .</li>
+              <li>Faciliter l'adhésion à l'association et montrer les avantages.</li>
+            </ul>
+            <p className="text-slate-300 text-lg mt-4 text-left">
+              C'est à partir de ces trois grands piliers que nous nous sommes orientés pour la refonte du site de Nouvelle Voix. 
+              Il est maintenant temps de passer au…
+              <Link to="/sujet-2" className="text-blue-500 hover:underline"> DESIGN</Link>
+            </p>
+          </div>
         </div>
       </div>
-      <div className="text-right ml-[75rem] mb-[2rem]">
-        <Link to="/sujet-4" className="text-blue-500 font-bold">
-           <FaArrowRight className="ml-2" />
+      <div className="text-right mr-8 md:mr-16 lg:mr-32 mb-8">
+        <Link to="/sujet-2" className="text-blue-500 font-bold">
+          <FaArrowRight className="inline-block" />
         </Link>
       </div>
-      <Footer />
+      <Footer className="ml-0 md:ml-16 lg:ml-32" />
     </div>
   );
 };
 
-export default Sujet3;
+export default Sujet1;

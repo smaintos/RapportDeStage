@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  className?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
-    <footer className="pt-[4rem] pb-[2rem] bg-slate-900 text-gray-400">
+    <footer className={`pt-[4rem] pb-[2rem] bg-slate-900 text-gray-400 ${className}`}>
       <ul className="flex justify-center space-x-[3rem] text-lg">
         <li>
           <Link to="/" className="hover:text-white transition-colors duration-300">
@@ -22,7 +26,7 @@ const Footer: React.FC = () => {
         </li>
         <li>
           <Link to="/contact" className="hover:text-white transition-colors duration-300">
-          Contact
+            Contact
           </Link>
         </li>
       </ul>

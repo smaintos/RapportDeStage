@@ -12,14 +12,13 @@ const Sujet2: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col pb-[4rem]">
+    <div className="bg-slate-900 min-h-screen flex flex-col pb-16">
       <Navbar />
-      <BlogCard content="2. Design" className="mt-[1.5rem]" />
-      <div className="flex-grow pt-[2rem] px-[4rem]">
-        <h1 className="text-2xl font-bold text-white ml-[26.5rem] mt-[1rem]">Du coup on lance Figma !</h1>
-        <br />
+      <BlogCard content="2. Design" className="mt-6" />
+      <div className="flex-grow pt-8 px-4 md:px-16 lg:px-32">
         <div className="mx-auto max-w-3xl">
-          <div className="mb-[4rem] text-left">
+          <h1 className="text-2xl font-bold text-white mb-4">Du coup on lance Figma !</h1>
+          <div className="text-left">
             <p className="text-slate-300 text-lg mb-4">
               Avant de faire ou refaire un site web, on ne peut pas commencer à dev tout de suite. 
               Il y a la question de la tech-stack qu'on va utiliser, et cela varie selon chaque développeur, 
@@ -31,7 +30,7 @@ const Sujet2: React.FC = () => {
               Étant donné que les seules directives qui nous ont été données sont :
             </p>
 
-            <ul className="list-disc text-left text-slate-300 text-lg mt-4 mx-auto w-[80%]">
+            <ul className="list-disc text-left text-slate-300 text-lg mt-4 mx-auto w-full md:w-3/4 lg:w-2/3">
               <li>Avoir une barre de navigation (comme sur le site que vous êtes actuellement ;)</li>
               <li>Avoir un compte à rebours du prochain événement dans la bannière du site.</li>
               <li>Avoir toutes les rubriques des activités principales de l'asso visibles dès l'arrivée sur le site.</li>
@@ -42,17 +41,17 @@ const Sujet2: React.FC = () => {
               Nous nous sommes tout de même basés sur la DA de base du site, qui se présente de cette manière (malheureusement, je n'ai pas pu avoir de visuel du site de base) :
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <div className="grid grid-cols-2 gap-4 mb-4">
               <img
                 src="/images/dabase/logoblanc.png"
                 alt="Example design"
-                className="w-[9rem] h-[10rem] object-cover"
+                className="w-full h-auto object-cover"
               />
               <img
                 src="/images/dabase/Logoblancpng.png"
                 alt="Design elements"
-                className="w-[10rem] h-[10rem] object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <br />
@@ -64,17 +63,17 @@ const Sujet2: React.FC = () => {
             <img
               src="/images/newda/logo.png"
               alt="Design elements"
-              className="w-[10rem] h-[10rem] object-cover mb-4"
+              className="w-40 h-auto object-cover mb-4"
             />
             <img
               src="/images/newda/nouveaulogo.png"
               alt="Design elements"
-              className="w-[40rem] h-[10rem] object-cover mb-4"
+              className="w-full h-auto object-cover mb-4"
             />
             <img
               src="/images/newda/banniere.png"
               alt="Design elements"
-              className="w-[70rem] h-[20rem] object-cover mb-4"
+              className="w-full h-auto object-cover mb-4"
             />
             <br />
             <p className="text-slate-300 text-lg mb-4">
@@ -85,24 +84,24 @@ const Sujet2: React.FC = () => {
               <img
                 src="/images/newda/accueil.png"
                 alt="Design elements"
-                className="w-[40rem] h-[30rem] object-cover"
+                className="w-full h-auto object-cover"
               />
               <img
                 src="/images/newda/exemple1.png"
                 alt="Design elements"
-                className="w-[40rem] h-[30rem] object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <img
                 src="/images/newda/exemple2.png"
                 alt="Design elements"
-                className="w-[40rem] h-[30rem] object-cover"
+                className="w-full h-auto object-cover"
               />
               <img
                 src="/images/newda/exemple3.png"
                 alt="Design elements"
-                className="w-[40rem] h-[30rem] object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <br />
@@ -113,7 +112,7 @@ const Sujet2: React.FC = () => {
             <img
               src="/images/newda/global.png"
               alt="Design elements"
-              className="w-[40rem] h-[40rem] object-cover"
+              className="w-full h-auto object-cover"
             />
             <br />
             <p className="text-slate-300 text-lg mb-4">
@@ -123,9 +122,9 @@ const Sujet2: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="text-right ml-[75rem] mb-[2rem]">
+      <div className="text-right mr-8 md:mr-16 lg:mr-32 mb-8">
         <Link to="/sujet-3" className="text-blue-500 font-bold">
-           <FaArrowRight className="ml-2" />
+           <FaArrowRight className="inline-block" />
         </Link>
       </div>
       <Footer />

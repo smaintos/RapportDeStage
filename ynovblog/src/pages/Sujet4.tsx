@@ -12,24 +12,23 @@ const Sujet4: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-slate-900 min-h-screen flex flex-col pb-[4rem]">
+    <div className="bg-slate-900 min-h-screen flex flex-col pb-16">
       <Navbar />
-      <BlogCard content="4. Back-end et ..." className="mt-[1.5rem]" />
-      <div className="flex-grow pt-[2rem] px-[4rem]">
-        <h1 className="text-2xl font-bold text-white ml-[26.5rem] mt-[1rem]">Le travail avec les Plugins</h1>
-        <br></br>
+      <BlogCard content="4. Back-end et ..." className="mt-6" />
+      <div className="flex-grow pt-8 px-4 md:px-16 lg:px-32">
         <div className="mx-auto max-w-3xl">
-          <div className="mb-[4rem] text-left">
+          <h1 className="text-2xl font-bold text-white mb-8">Le travail avec les Plugins</h1>
+          <div className="mb-16 text-left">
             <p className="text-slate-300 text-lg mb-4">
               Bon, comme vous l'avez vu dans <Link to="/sujet-3" className="text-blue-500 hover:underline">l'article précédent</Link>, il n'y a pas eu beaucoup de back-end... Eh oui, c'était surtout du front-end en fait. WordPress gère tout le back-end ou du moins une grande partie du back-end à notre place, donc là ce n'était plus qu'un travail de recherche d'idées et de plugins. Vous avez la fenêtre où l'on écrit le code pour avoir les éléments qui s'affichent sur la page, mais ce n'est pas tout...
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Elementor et les plugins de développement</h2>
             <img
               src="/images/wordpress/elementor.png"
               alt="Interface Elementor"
-              className=" w-[10rem] h-[10rem] object-cover  mb-4"
+              className="w-full h-auto object-cover mb-4"
             />
             <p className="text-slate-300 text-lg mb-4">
               Oui, il y a des plugins qui servent à nous aider à moins coder. Dans le cas d'<Tooltip text="Elementor" definition="Elementor est un plugin WordPress populaire qui permet de créer des pages web en utilisant une interface visuelle de glisser-déposer, sans avoir besoin de coder." />, qui est un plugin permettant de remplacer des lignes de code par des actions, je m'explique :)
@@ -46,19 +45,19 @@ const Sujet4: React.FC = () => {
             <img
               src="/images/wordpress/bouton.png"
               alt="Interface Elementor"
-              className="mx-auto w-[80%] h-[20rem] object-cover rounded-lg shadow-lg mb-4"
+              className="mx-auto w-full h-auto object-cover rounded-lg shadow-lg mb-4"
             />
             <p className="text-slate-300 text-lg mb-4">
               Elementor permet donc de gagner du temps en simplifiant certaines tâches de développement, notamment pour ceux qui ne sont pas familiers avec le code.
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Redirections et travail avec le CSS</h2>
             <p className="text-slate-300 text-lg mb-4">
               La majeure partie de notre travail a consisté à configurer des redirections dans des onglets déjà créés par WordPress. Nous avons placé des boutons et utilisé quelques lignes de code pour ajuster le design de la page. Les lignes de code que nous avons écrites ont surtout servi à quelques solutions de <Tooltip text="CSS" definition="Le CSS (Cascading Style Sheets) est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML." /> pour, par exemple, superposer des images ou placer de petits boutons.
             </p>
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <h2 className="text-2xl text-white mb-4 font-bold">Optimisation du SEO avec Yoast</h2>
             <p className="text-slate-300 text-lg mb-4">
               Pour la partie <Tooltip text="SEO" definition="Le SEO (Search Engine Optimization) est l'ensemble des techniques visant à améliorer le positionnement d'un site web dans les résultats des moteurs de recherche." /> du site, nous avons utilisé le plugin Yoast SEO. Ce plugin est un outil essentiel pour ceux qui souhaitent améliorer le référencement de leur site sans plonger dans les détails techniques du SEO.
@@ -72,19 +71,19 @@ const Sujet4: React.FC = () => {
             <img
               src="/images/wordpress/yoast.png"
               alt="Yoast SEO"
-              className="mx-auto w-[80%] h-[20rem] object-cover rounded-lg shadow-lg mb-4"
+              className="mx-auto w-full h-auto object-cover rounded-lg shadow-lg mb-4"
             />
           </div>
-          <div className="mb-[4rem] text-left">
+          <div className="mb-16 text-left">
             <p className="text-slate-300 text-lg mb-4">
-              Après avoir exploré les plugins et les outils disponibles, il est temps de conclure notre travail après avoir réfléchis à la manière dont nous avons réussi à combiner ces différents éléments pour créer un site fonctionnel et optimisé. On peut donc passer à la conclusion et ressentie sur le projet, suivez <Link to="/sujet-5" className="text-blue-500 hover:underline">la prochaine étape</Link>.
+              Après avoir exploré les plugins et les outils disponibles, il est temps de conclure notre travail après avoir réfléchi à la manière dont nous avons réussi à combiner ces différents éléments pour créer un site fonctionnel et optimisé. On peut donc passer à la conclusion et au ressenti sur le projet, suivez <Link to="/sujet-5" className="text-blue-500 hover:underline">la prochaine étape</Link>.
             </p>
           </div>
         </div>
       </div>
-      <div className="text-right ml-[75rem] mb-[2rem]">
+      <div className="text-right mr-8 md:mr-16 lg:mr-32 mb-8">
         <Link to="/sujet-5" className="text-blue-500 font-bold">
-           <FaArrowRight className="ml-2" />
+           <FaArrowRight className="inline-block" />
         </Link>
       </div>
       <Footer />
