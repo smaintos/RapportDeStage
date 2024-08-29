@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="flex-grow pt-8 px-8">
         <div className="w-full mt-8 flex justify-center">
           <img 
-            src="/images/banner.jpg" 
+            src="/images/massy.jpg" 
             alt="Bannière de l'association Nouvelle Voix" 
             className="w-full max-w-[1500px] h-[15rem] md:h-[50rem] object-cover object-top rounded-lg shadow-lg border-2 border-blue-500 transform transition-transform duration-300 hover:translate-y-[-15px]"
             loading="lazy"
