@@ -11,7 +11,7 @@ const About: React.FC = () => {
         <img 
           src="/images/banner.jpg" 
           alt="Bannière de l'association Nouvelle Voix" 
-          className="w-[100rem] h-[30rem] object-cover object-top rounded-lg shadow-lg ml-[5rem] border-2 border-blue-500 transform transition-transform duration-300 hover:translate-y-[-15px]"
+          className="w-[100rem] h-[30rem] object-cover object-top rounded-lg shadow-lg ml-[9.8rem] border-2 border-blue-500 transform transition-transform duration-300 hover:translate-y-[-15px]"
           loading="lazy"
         />
       </div>
