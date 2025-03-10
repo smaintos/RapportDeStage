@@ -69,7 +69,7 @@ function Home() {
               <br/><br/>
               Étudiant actuellement en préparation d'un master en école (Ynov Campus Bordeaux).
               <br/><br/>
-              Mes compétences incluent React, Next.JS, Typescript, SQL ainsi que plusieurs frameworks modernes et toute la stack à avoir pour être un développeur web en 2024 que vous pouvez retrouver sur mon <a href="/cv.pdf" download="William_Mariamon_CV.pdf" className="text-blue-500 underline hover:text-white transition-colors duration-300">CV disponible</a> en téléchargement. J'aime relever des défis complexes, et je suis constamment à la recherche de nouvelles technologies pour améliorer mes compétences. 
+              Mes compétences incluent React, Next.JS, Typescript, SQL ainsi que plusieurs frameworks modernes et toute la stack à avoir pour être un développeur web en 2024 que vous pouvez retrouver sur mon CV disponible en téléchargement. J'aime relever des défis complexes, et je suis constamment à la recherche de nouvelles technologies pour améliorer mes compétences. 
               <br/><br/>
               Mon objectif est de créer des expériences utilisateurs fluides et intuitives, en mettant l'accent sur la performance, l'accessibilité, et la fonctionnalité. Que ce soit pour des projets personnels ou professionnels, je m'efforce de livrer un code propre, efficace et maintenable.
               <br/><br/>
